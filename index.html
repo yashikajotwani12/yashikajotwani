@@ -3,444 +3,429 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashika's portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Yashika Jotwani</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="site-main-wrapper">
-        <button class="hamberger">
-            <img src="./images/images/hamberger.svg" alt="">
-
-        </button>
-        <div class="mobile-nav">
-            <button class="times"><img src="images/images/times.svg" alt=""></button>
-            <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Services</li>
-                <li><a href="#"></a>Works</li>
-                <li><a href="#"></a>Blogs</li>
-            </ul>
-        </div>
-        <header>
-            <div class="container">
-                <nav id="main-nav" class="flex items-center justify-between">
-                    <div class="left flex items-center justify-between">
-                        <div class="branding">
-                            <img src="images/e9e9ad58-5363-4c20-9e61-8eeb98c4e0b7.jpg">
-                        </div>
-                        <div>
-                            <a href="#">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#services">Services</a>
-                            <a href="#work">Works</a>
-                            <a href="#blog">Blog</a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <a href="#contact"><button class="btn btn-primary">Contact</button></a>
-                    </div>
-                </nav>
-                <div class="hero flex items-center justify-between">
-                    <div class="left flex-1 flex justify-center">
-                        <img src="images/images/be-awesome-today.-inspiration-and-motivation-quote-png_126730-removebg-preview.png" alt="">
-    
-                    </div>
-                    <div class="right flex-2">
-                        <h6>Yashika Jotwani</h6>
-                        <h1>Dare <span> Determination</span> Drive</h1>
-                        <p>"Dare to dream, but even more importantly, dare to put action behind your dreams ,failure will never overtake you if your determination to succeed is strong enough."</p>
-                        <div>
-                            <a href="Yashika's Resume (6).pdf" download="Yashika's Resume (6).pdf">
-                            <button class="btn btn-secondary">DOWNLOAD CV</button>
-                            </a>
-                        </div>
-    
-    
-                    </div>
-                </div>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
             </div>
-        </header>
-    
-        <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
-                <div class="flex-1">
-                    <!-- <img class="about-me-img" src="images/images/PhotoGrid_1606632165430.jpg" alt=""> -->
-                    <div class="container_card">
-                        <div class="aboutcard">
-                            <div class="aboutsneaker">
-                                <div class="aboutcircle"></div>
-                                <img src="images/images/WhatsApp Image 2021-02-01 at 10.53.14.jpeg" alt="" class="aboutcardimage">
+            <div>
+                <a href="#" class="nav__logo">Yashika</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Achivements</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="l-main">
+
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="assets/img/logo-letter-y-blue-glowing-vector-22855369.jpg" alt="">
+                    </div>
+                    <h1 class="home__title">Yashika Jotwani</h1>
+                    <span class="home__profession">FullStack Development | OpenSource Enthusiast | Problem Solving |
+                        Hackathons</span>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/" class="home__social-link"><i
+                                class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/yashikajotwani12" class="home__social-link"><i
+                                class="bx bxl-github"></i></a>
+                        <a href="https://medium.com/@yashikajothwani39" class="home__social-link"><i
+                                class="bx bxl-medium"></i></a>
+
+                    </div>
+                    <a download="" href="assets/Yashika-Jotwani-Resume.pdf" class="button home__button">Download
+                        Resume</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about section " id="about">
+          
+            <span class="section-subtitle">About me</span>
+          
+            <h2 class="section-title">Hello! i'm Yashika Jotwani.</h2>
+           
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <img src="assets/img/Profileimg.jpg" alt="" class="about__img">
+                    <p class="about__description">I am an undergraduate in Computer Science Stream, from Gyan Ganga
+                        Institute Of Technology And Sciences, Jabalpur IN. Exploring different Technolgies and building
+                        projects, currently learning and making projects in Django, I want to contribute in open source
+                        projects, I am consistent in Problem solving in different coding platforms.</p>
+
+                </div>
+                <div  >
+
+                    <div class="about__information">
+                        <h3 class="about__information-title"> Information</h3>
+                        <div class="about__information-data">
+                            <i class="bx bx-user about__information-icon"></i>
+                            <span>Yashika Jotwani</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class="bx bx-phone about__information-icon"></i>
+                            <span>903-999-3918</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class="bx bx-user about__information-icon"></i>
+                            <span>YashikaJothwani39@gmail.com</span>
+                        </div>
+
+
+                    </div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Experience and Achivements</h3>
+                        <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">Microsoft Learn Student Ambassador</span>
+                                <span class="about__information-subtitle-small">Beta</span>
+
                             </div>
-                            <div class="aboutinfo">
-                                <h1 class="abouttitle">Yashika Jotwani</h1>
-                                <h3>Gyan Ganga Institute of Technology and Sciences</h3>
-                                <div class="aboutsizes">
-                                    <button><a href="https://www.codechef.com/users/yashika_00">Codechef</a></button>
-                                    <button><a href="https://www.hackerrank.com/yashikajotwani12">HackerRank</a></button>
-                                    <button><a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/">LinkedIn</a></button>
-                                    <button><a href="https://leetcode.com/yashikajotwani/">LeetCode</a></button>
-                                </div>
-                                <div class="aboutpurchase">
-                                    <button><a href="https://github.com/yashikajotwani12" class="btn">GitHub</a></button>
-                                </div>
+                        </div>
+                        <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">OpenSource Programs</span>
+                                <span class="about__information-subtitle-small">Gssoc'21</span>
+
+                            </div>
+                        </div>
+                         <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                                      <span class="about__information-subtitle">Community </span>
+                                <span class="about__information-subtitle-small">Entrepreneurship cell (Technical Core Leader), Webmasters(Technical Core Leader)</span>
+
+                            </div>
+                        </div>
+                         <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">Problem Solving </span>
+                                <span class="about__information-subtitle-small">Codechef(3*), Leetcode(3*)</span>
+
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-                <div class="flex-1 right">
-                    <h1>About <span>Me</span></h1>
-                    <h3>Hello! i'm Yashika Jotwani.</h3>
-                    <p>I am an Undergrad in Computer Science Engineering in Gyan Ganga Institute Of Technology And Sciences(Jabalpur ,Madhya Pradesh) . I am Enthusiast Learner, Aiming to achieve some unique things of my wishlist. Learning and grasping  new things everyday to achieve my target goal and also not forgetting to fullfil the basic need of life ie.to enjoy what i am doing that's what makes me consistent.  </p>
-                    <div class="icons">
-                        <a href="#" class="fab fa-facebook-f" id="fb"></a>
-                        <a href="#" class="fab fa-twitter" ></a>
-                        <a href="#" class="fab fa-instagram" ></a>
-                        <a href="#" class="fab fa-youtube" ></a>
-                        <a href="#" class="fab fa-whatsapp" ></a>
-                    </div>
-                    <div class="myskills">
-                        <h1>My Skills</h1>
-                        <li>
-                            <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
-                            
-
-                        </li>
-                        <li>
-                            <h3>CSS</h3><span class="bar"><span class="css"></span></span>
-                            
-
-                        </li>
-                        <li>
-                            <h3>JAVASCRIPT</h3><span class="bar"><span class="jquery"></span></span>
-                            
-
-                        </li>
-                        <li>
-                            <h3>DATA STRUCTURES</h3><span class="bar"><span class="javascript"></span></span>
-                            
-
-                        </li>
 
 
-
-
-                    </div>
-
-    
-                </div>
-               
             </div>
+
         </section>
-        
-        <section  id="services" class="services">
-            <div class="container">
-                <h1 class="section-heading"><span>My</span> Handles</h1>
-                <p>Working On Everday</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="images/images/" alt="">
-                        <h2>Codechef</h2>
-                        <p> Competitive coding And  for enhancing Problem Solving Skills.
-                        </p>
-                        <a href="https://www.codechef.com/users/yashika_00"><button class="btn btn-primary">CODECHEF</button></a>
-    
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Why Choose Me</span>
+            <h2 class="section-title">My expertise</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Frontend/Backend</h3>
+                    <div class="skills__data">
+                        <span class="skills__name">Html/css</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__html"></span>
                     </div>
-                    <div class="card">
-                        <img src="images/images/" alt="">
-                        <h2>LeetCode</h2>
-                        <p>Practicing , 2star @LeetCode.
-                        </p>
-                        <a href="https://leetcode.com/yashikajotwani/"><button class="btn btn-primary">LEETCODE</button></a>
-    
+
+                    <div class="skills__data">
+                        <span class="skills__name">React</span>
+                        <span class="skills__number">40%</span>
+                        <span class="skills__bar skills__react"></span>
                     </div>
-                    <div class="card">
-                        <!-- <img src="images/images/bag.svg" alt=""> -->
-                        <h2>Blogger</h2>
-                        <p>This would the first Project (Portfolio ) that would be published.
-                        </p>
-                        <a href="https://www.blogger.com/u/2/blog/posts/7046740091756533461"><button class="btn btn-primary">BLOGGER</button></a>
-    
+
+                    <div class="skills__data">
+                        <span class="skills__name">Django</span>
+                        <span class="skills__number">60%</span>
+                        <span class="skills__bar skills__dj"></span>
                     </div>
-                    <div class="card">
-                        <!-- <img src="images/images/desktop.svg" alt=""> -->
-                        <h2>LinkedIn</h2>
-                        <p> Most Active ,Making New connections Everyday.
-                        </p>
-                        <a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/"><button class="btn btn-primary">LINKEDIN</button></a>
-    
-                    </div>
-                    <div class="card">
-                        <!-- <img src="images/images/instagram.svg" alt=""> -->
-                        <h2>Instagram</h2>
-                        <p> you can follow me on instagram.
-                        </p>
-                        <a href="https://www.instagram.com/jotwaniyashika/"><button class="btn btn-primary">INSTAGRAM</button></a>
-    
-                    </div>
-                    <div class="card">
-                        <!-- <img src="images/images/phone.svg" alt=""> -->
-                        <h2>HackerRank</h2>
-                        <p>3star in problem solving .
-                        </p>
-                        <a href="https://www.hackerrank.com/yashikajotwani12"><button class="btn btn-primary">HACKERRANK</button></a>
-    
-                    </div>
-    
-                </div>
-    
-            </div>
-    
-        </section>
-        <section  class="freelancer">
-            <h1> Github </h1>
-            <p>Currently learner some new things to get better and better and also improving competive programming.
-              This portfolio website is the first project that has been published . I hope in upcoming months, i would be posting some new and intresting things.
-            </p>
-           <a href="https://github.com/yashikajotwani12"> <button class="btn btn-primary">GITHUB</button></a>
-    
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <h1 class="section-heading"><span>MY</span> CERTIFICATIONS</h1>
-                <p>Some Achievements that will open doors for more oppurtunities.</p>
-                <div class="slider">
+
+                  
+
                    
-                    <div class="slide">
-                        <img src="./images/images/Yashika Jothwani (1).jpg" alt="">
-                        <p>Took Part in Clean Air Asia hackathon . Ranked Among Top 10 teams, in the project of "Smart Home".</p>
-                        <span>Yashika Jotwani</span>
-    
-                    </div>
-                    <div class="slide">
-                        <img src="./images/images/0001.jpg" alt="">
-                        <p> Helped in conducting  an event :Guest(Aman Dhatarwaal)</p>
-                        <span>Yashika Jotwani</span>
-    
-                    </div>
-                    <div class="slide">
-                        <img src="./images/images/0001 (1).jpg" alt="">
-                        <p>Took part in Ninja Hire conducted By Coding Ninjas, Ranked 594th among 3400.</p>
-                        <span>Yashika Jotwani</span>
-    
-                    </div>
-                    <div class="slide">
-                        <img src="./images/images/0001 (3).jpg" alt="">
-                        <p>My first participation in Gov_Hackathon (48 hours) organized by IEEE.</p>
-                        <span>Yashika Jotwani</span>
-    
-                    </div>
                 </div>
-                <div class="slider-dots"></div>
-    
-            </div>
-    
-        </section>
-        <!-- <section id="work" class="work">
-            <div class="container">
-                <h1 class="section-heading"><span>OUR</span> WORKS</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil architecto iste quod quisquam minus
-                    repellat tempore ipsum, nam reprehenderit recusandae, porro rerum suscipit laborum voluptatem, atque
-                    dolore aut ut fuga.
-                </p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Others</h3>
+                    <div class="skills__data">
+                        <span class="skills__name">Git/Github</span>
+                        <span class="skills__number">85%</span>
+                        <span class="skills__bar skills__git"></span>
                     </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
-                    </div>
-                    <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
-                    
-                        </div>
-                        <img src="./images/images/ph-1.png" alt="">
-                    </div>
-    
-                </div>
-               
-                
-                
-            </div>
-            
-    
-        </section> -->
-        <section id="blog" class="blog">
-            <div class="container">
-                <h1 class="section-heading"><span>MY</span> BLOGS</h1>
-                <p>Some piece of Thoughts written into words.</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/images/article-ph-1.png" alt="">
-    
-    
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Hurdles on your way</h1>
-                            </a>
-                            <span>5,Jan 2021</span>
-                            <p> From My experience, If you are willing to achieve something rather be anything , you will accomplish it only when you are genuinely focusing on that part. while moving to your destination you will get many obstacles , and that obstacles will surely try to stop you but when your goals are clear, believe me no other thing can stop you. as somebody has said putting more than 10,000 hours on something will definitely make you and expert in that...</p>
-                          <a href="https://yashikajotwani11.blogspot.com/2021/01/hurdles-on-your-way.html">READ MORE</a>
-                            
-    
-                        </div>
-    
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/images/article-ph-1.png" alt="">
-    
-    
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>connection(with yourself).</h1>
-                            </a>
-                            <span>5, Jan2021</span>
-                            <p>So many people will come  and go across your path, some will stay ,some will move on , but only few will give you something good , While growing up and interacting with more and more people I learned something that never assign yourself to someone who really does not  care about you or you both are not known  to each other very well, summing up I would suggest everyone , set your priorities, do good for yourself and for the people who really care, love yourself and also accept the way you are. just do what makes you happy. </p>
-                          <a href="https://yashikajotwani11.blogspot.com/2021/01/connection-with-yourself.html">READ MORE</a>
-                            
-    
-                        </div>
-    
-                    </div>
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./images/images/article-ph-1.png" alt="">
-    
-    
-                        </div>
-                        <div class="card-content">
-                            <a href="#">
-                                <h1>Positiveness.</h1>
-                            </a>
-                            <span>5,Jan 2021</span>
-                            <p>Many of you know that positive thoughts leads to positive actions , have you ever thought many people accept their other illness but do not accept that their mental peace do matters the most. Everybody works so hard in this daily routine but only some people actually care about mental peace , meditation is also one way to distract yourself from negative thoughts , many people get irritated or are becoming short tempered because of this daily routine and work and forget to give time to their family and themselves,...</p>
-                          <a href="https://yashikajotwani11.blogspot.com/2021/01/positiveness.html">READ MORE</a>
-                            
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-            </div>
-    
-        </section>
-        <section id="contact" class="contact">
-            <div class="container">
-                <h1 class="section-heading">Contact<span> Me</span></h1>
-                <p>You Can Fill This Form For Any Queries</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <!-- <img src="./images/images/phone-2.png" alt=""> -->
-                        <h2>Call Me On</h2>
-                        <h6>903-999-3918</h6>
-                    </div>
-                    <div class="card">
-                        <!-- <img src="./images/images/msg.png" alt=""> -->
-                        <h2>Email Me At</h2>
-                        <h6>yashikajothwani39@gmail.com</h6>
-                    </div>
-                    <div class="card">
-                        <!-- <img src="./images/images/map.svg" alt=""> -->
-                        <h2>My City</h2>
-                        <h6>Jabalpur</h6>
-                    </div>
-                </div>
-               <form action="">
-                <div class="input-wrap">
-                    <input  class="name" type="text" placeholder="Your Name *">
-                    <input  class="email" type="email" placeholder="Your Email*">
-    
-    
-    
-                </div>
-                <div class="input-wrap-2">
-                    <input type="text" placeholder="Message..." class="message">
-    
-                </div>
-                <div class="btn-wrapper">
-                    <button class="btn btn-primary" type="submit">Send Message</button>
-            
-    
-                </div>
-               </form>
-    
-            </div>
-    
-    
-        </section>
-        <footer>
-            <!-- <img class="footer-logo" src="./images/images/logo-2.svg" alt=""> -->
-    
-            <div class="footer-socials">
-                
-                <!-- <a href="#"><img src="./images/images/website.svg" alt=""></a>
-                <a href="#"><img src="./images/images/pintrest.svg" alt=""></a>
-                <a href="#"><img src="./images/images/facebook.svg" alt=""></a>
-                <a href="#"><img src="./images/images/instagram.svg" alt=""></a>
-             -->
-    
-            </div>
-            <div class="copyright">
-            Improve yourself everday!!!
-            </div>
-        </footer>
 
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/app.js"></script>
+                    <div class="skills__data">
+                        <span class="skills__name">Dsa in c++</span>
+                        <span class="skills__number">60%</span>
+                        <span class="skills__bar skills__dsa"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">Python</span>
+                        <span class="skills__number">55%</span>
+                        <span class="skills__bar skills__py"></span>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </section>
+        <section class="education">
+            <span class="section-subtitle">Qualifications</span>
+            <h2 class="section-title">My Education</h2>
+
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2019-2023</h3>
+                        <span class="education__university">Gyan Ganga Institute Of Technology And Sciences</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Btech CSE</h3>
+                        <span class="education__speciality">Schooling</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2018-2019</h3>
+                        <span class="education__university">St.Xavier's High School</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Class 12th</h3>
+                        <span class="education__speciality">Schooling</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2016-2017</h3>
+                        <span class="education__university">St.Xavier's High School</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Class 10th</h3>
+                        <span class="education__speciality">Schooling</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="services section" id="services">
+            <span class="section-subtitle">My works</span>
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Menstruated</h3>
+                    <p class="services__description">
+                        Menstruated is a place where women share their first-period stories, feelings, emotions through blogs. Can track your periods and get notified early through the mail. They should know that you are not alone in the fight against PCOS by-polls which shown in the graph and many other questions. Can know the myths/facts, self-care during periods, and much more.
+                    </p>
+                    <a href="http://menstruated.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
+                </div>
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Web Compiler</h3>
+                    <p class="services__description">
+                        Web-compiler is a react web app on which you can write your HTML, CSS, JS code and also preview the changes simultaneously. It comes in handy when you are designing something. It's useful to web developers.
+                    </p>
+                    <a href="https://yashikajotwani12.github.io/Web-Compiler/" class="button contact__button project__button">Have a Look!</a>
+                </div>
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Pcodlive</h3>
+                    <p class="services__description">
+                        This is a blog website has been made through django, where women with PCOD/PCOS can share their thoughts and and also can read about other's experiences.
+                    </p>
+                    <a href="pcodlive.herokuapp.com/blog/" class="button contact__button project__button">Have a Look!</a>
+                </div>
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Polling Graph</h3>
+                    <p class="services__description">
+                       Polling Graph, you can add questions to this and actually view the result based graph, which tells you the number of people voted for which particular option.
+                    </p>
+                    <a href="https://polledin.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
+                </div>
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Periods Date Reminder</h3>
+                    <p class="services__description">
+                       Periods Date Reminder is a webapp, made through Django which basically ask the user to register their last period date and give send them mails automatically before their period date arrive so they can be carefull, and take care about their periods.
+                    </p>
+                    <a href="https://remindmemyperiods.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
+                </div>
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Open Source Projects</h3>
+                    <p class="services__description">
+                       Being a part of GirlsScript Summer Of Code'21, I contributed to some projects in c++, html,css,js. 
+                    </p>
+                    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayashikajotwani12+archived%3Afalse+is%3Aopen" class="button contact__button project__button">Have a Look!</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="project section">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <h2 class="section-title project__title">My projects
+
+                    </h2>
+                    <p class="project__description">All my projects which i have made till date have been published in
+                        my github account, If you find them instresting or helpful or find any issue or bug, them do
+                        make and issue, otherwise do give it a star.</p>
+                    <a href="https://github.com/yashikajotwani12" class="button button__light">Github</a>
+                </div>
+                <img src="" alt="" class="project__img">
+
+            </div>
+
+
+        </section>
+        <!-- <section class="works section" id="works">
+            <span class="section-subtitle">My Portfolio</span>
+            <h2 class="section-title">Recent works</h2>
+            <div class="works__container bd-grid">
+                <div class="works__img">
+                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="assets/img/computer-laptop-with-white-frame-paper-cards-pink-color-background_9555-256.jpg"
+                        alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
+                    <div class="works__data">
+                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works__title">Work1</span>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+
+                    </div>
+                    <input type="text" placeholder="Project" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+                <div class="me">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call Me</h3>
+                        <span class="contact__text">903-999-3918</span>
+                        
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span class="contact__text">yashikajothwani39@gmail.com</span>
+                        
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text">INDIA</span>
+                        <span class="contact__text">Jabalpur</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- <footer class="footer">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title"> Yashika </h1>
+            <p class="footer__description">
+                Lorem ipsum dolor sit.
+            </p>
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+            </div>
+            <p class="footer__copy">All right reserved by yashikajotwani - 2021</p>
+
+        </div>
+    </footer> -->
+
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
