@@ -1,431 +1,842 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashika Jotwani</title>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- Your Website Title -->
+	<title>Yashika Jotwani</title>
+	<!-- Your Website Description -->
+	<meta name="description"
+		content="This template is developed by Yashovardhan Agrawal. You can find him at https://yashovardhan.dev" />
+	<meta name="author" content="Yashovardhan Agrawal">
+
+	<!-- Meta Tags for Responsiveness -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:title"
+		content="This template is developed by Yashovardhan Agrawal. You can find him at https://yashovardhan.dev">
+	<meta name="twitter:description"
+		content="This template is developed by Yashovardhan Agrawal. You can find him at https://yashovardhan.dev">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:site" content="@yashovardhan">
+	<meta name="twitter:creator" content="@yashovardhan">
+
+	<!-- Social Media Meta Tags -->
+	<meta property="og:url" content="http://yashovardhan.dev/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title"
+		content="This template is developed by Yashovardhan Agrawal. You can find him at https://yashovardhan.dev" />
+	<meta property="og:description"
+		content="This template is developed by Yashovardhan Agrawal. You can find him at https://yashovardhan.dev" />
+	<meta property="og:image" content="http://yashovardhan.dev/assets/img/logo.jpeg" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./logoo.jpg" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i" rel="stylesheet">
+
+	<!-- Bootstrap & Other CSS Files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+		integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+		crossorigin="anonymous" />
+
+	<!-- Project CSS File -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/400db8db7c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-menu"></i>
-            </div>
-            <div>
-                <a href="#" class="nav__logo">Yashika</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class="bx bx-x"></i>
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Achivements</a></li>
-                    <li class="nav__item"><a href="#works" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<body onclick="colourChange()">
+	<!-- Page Wrapper -->
+	<div class="page-wrapper">
+		<!-- Header -->
+		<header>
+			<div class="logo animate">
+				<a href="#">
+					<img style="width: 3rem;
+					border-radius: 2rem;
+					" class="img-responsive" src="assets/img/logo.jpeg" alt="yash">
+				</a>
+			</div>
+		</header>
 
-    </header>
-    <main class="l-main">
+		<!-- Content Wrapper -->
+		<div class="content-wrapper">
+			<div class="content-main animate">
+				<div class="container">
+					<h1 class="page-title">Hi, I'm Yashika</h1>
+					<h2 style="font-weight: 700;">FullStack Developer | OpenSource | Problem Solver</h2>
+				</div>
+			</div>
+			<!-- Background Wrapper -->
+			<div class="background-wrapper">
+				<div id="background-content"></div>
+			</div>
+		</div>
 
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <div class="home__img">
-                        <img src="assets/img/logo-letter-y-blue-glowing-vector-22855369.jpg" alt="">
-                    </div>
-                    <h1 class="home__title">Yashika Jotwani</h1>
-                    <span class="home__profession">FullStack Development | OpenSource Enthusiast | Problem Solving |
-                        Hackathons</span>
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/" class="home__social-link"><i
-                                class="bx bxl-linkedin"></i></a>
-                        <a href="https://github.com/yashikajotwani12" class="home__social-link"><i
-                                class="bx bxl-github"></i></a>
-                        <a href="https://medium.com/@yashikajothwani39" class="home__social-link"><i
-                                class="bx bxl-medium"></i></a>
+		<!-- Menu -->
+		<div class="menu">
+			<button class="nav-tgl" type="button" aria-label="toggle menu">
+				<span aria-hidden="true"></span>
+			</button>
+			<div class="nav">
+				<div class="header">
+					<div class="logo animate">
+						<a href="#">
+							<img style="width: 3rem;
+							border-radius: 2rem;
+							" class="img-responsive" src="assets/img/logo.jpeg" alt="yash">
+						</a>
+					</div>
+				</div>
+				<div class="nav-content">
+					<a href="" data-toggle="modal" data-target="#modal-about" class="nav-item1">
+						<h1 class="nav-link">About</h1>
+					</a>
+					<a href="" data-toggle="modal" data-target="#modal-projects" class="nav-item2">
+						<h1 class="nav-link">Projects</h1>
+					</a>
+					<a href="" data-toggle="modal" data-target="#modal-experience" class="nav-item3">
+						<h1 class="nav-link">Experience</h1>
+					</a>
+					<a href="" class="nav-item4">
+						<h1 class="nav-link">Blog</h1>
+					</a>
+					<a href="mailto:yashikajotwani12@gmail.com" target="_blank" class="nav-item5">
+						<h1 class="nav-link">Let's Connect!</h1>
+					</a>
+				</div>
+				<div class="footer">
+					<div class="social-icons animate">
+						<a href="https://twitter.com/yashika_jotwani" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://github.com/yashikajotwani12" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/" target="_blank"><i
+								class="fa fa-linkedin"></i></a>
+						<a href="https://medium.com/@yashikajothwani39" target="_blank"><i class="fa fa-medium"></i></a>
+						<a href="mailto:yashikajotwani12@gmail.com" target="_blank"><i
+								class="fa fa-envelope-open"></i></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 
-                    </div>
-                    <a download="" href="assets/Yashika-Jotwani-Resume.pdf" class="button home__button">Download
-                        Resume</a>
-                </div>
+		<!-- Footer -->
+		<footer>
+			<div class="social-icons animate">
+				<a href="https://twitter.com/yashika_jotwani" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://github.com/yashikajotwani12" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7/" target="_blank"><i
+						class="fa fa-linkedin"></i></a>
+				<a href="https://medium.com/@yashikajothwani39" target="_blank"><i class="fa fa-medium"></i></a>
+				<a href="mailto:yashikajotwani12@gmail.com" target="_blank"><i class="fa fa-envelope-open"></i></a>
+			</div>
+		</footer>
+	</div>
 
-            </div>
-        </section>
+	<!-- About Modal -->
+	<div class="modal fade" id="modal-about" tabindex="-1" role="dialog" aria-labelledby="modal-about-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-about-label">About</h2>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<!-- Left Col for Introduction -->
+							<div class="col-md-3" style="overflow: hidden; ">
+								<div class="person">
+									<div class="image">
+										<img class="img-responsive" src="assets/img/logo.jpeg">
+									</div>
+									<h4>Yashika Jotwani</h4>
+									<!-- <h5>Jon title - <a href="http://example.com">Company Name</a></h5> -->
+									<h5><a href="mailto:yashikajotwani12@gmail.com"
+											target="_blank">@yashikajotwani12</a></h5>
+									<h5><i class="fa fa-map-marker"></i><span style="padding-left: 8px;">Jabalpur,
+											Madhya Pradesh, India</span></h5>
+									<div class="social-icons" style="margin-left: -0.3125rem;">
+										<a href="https://twitter.com/yashika_jotwani" target="_blank"><i
+												class="fa fa-twitter"></i></a>
+										<a href="https://github.com/yashikajotwani12" target="_blank"><i
+												class="fa fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/yashika-jothwani-03a0061b7"
+											target="_blank"><i class="fa fa-linkedin"></i></a>
+										<a href="https://medium.com/@yashikajothwani39" target="_blank"><i
+												class="fa fa-medium"></i></a>
+									</div>
+									<a href="https://docs.google.com/document/d/1-ucCZsUfDhoEe0ooRKNHDU5378567-4wTELTHBH-5r4/edit?usp=sharing"
+					                class="btn purple" target="_blank">Resume</a>
+								</div>
+							</div>
 
-        <section class="about section " id="about">
-          
-            <span class="section-subtitle">About me</span>
-          
-            <h2 class="section-title">Hello! i'm Yashika Jotwani.</h2>
-           
-            <div class="about__container bd-grid">
-                <div class="about__data">
-                    <img src="assets/img/Profileimg.jpg" alt="" class="about__img">
-                    <p class="about__description">I am an undergraduate in Computer Science Stream, from Gyan Ganga
-                        Institute Of Technology And Sciences, Jabalpur IN. Exploring different Technolgies and building
-                        projects, currently learning and making projects in Django, I want to contribute in open source
-                        projects, I am consistent in Problem solving in different coding platforms.</p>
-
-                </div>
-                <div  >
-
-                    <div class="about__information">
-                        <h3 class="about__information-title"> Information</h3>
-                        <div class="about__information-data">
-                            <i class="bx bx-user about__information-icon"></i>
-                            <span>Yashika Jotwani</span>
-                        </div>
-                        <div class="about__information-data">
-                            <i class="bx bx-phone about__information-icon"></i>
-                            <span>903-999-3918</span>
-                        </div>
-                        <div class="about__information-data">
-                            <i class="bx bx-user about__information-icon"></i>
-                            <span>YashikaJothwani39@gmail.com</span>
-                        </div>
-
-
-                    </div>
-                    <div class="about__information">
-                        <h3 class="about__information-title">Experience and Achivements</h3>
-                        <div class="about__information-data">
-                            <i class="bx bx-medal about__information-icon"></i>
-                            <div>
-                                <span class="about__information-subtitle">Microsoft Learn Student Ambassador</span>
-                                <span class="about__information-subtitle-small">Beta</span>
-
-                            </div>
-                        </div>
-                        <div class="about__information-data">
-                            <i class="bx bx-medal about__information-icon"></i>
-                            <div>
-                                <span class="about__information-subtitle">OpenSource Programs</span>
-                                <span class="about__information-subtitle-small">Gssoc'21</span>
-
-                            </div>
-                        </div>
-                         <div class="about__information-data">
-                            <i class="bx bx-medal about__information-icon"></i>
-                            <div>
-                                                      <span class="about__information-subtitle">Community </span>
-                                <span class="about__information-subtitle-small">Entrepreneurship cell (Technical Core Leader), Webmasters(Technical Core Leader)</span>
-
-                            </div>
-                        </div>
-                         <div class="about__information-data">
-                            <i class="bx bx-medal about__information-icon"></i>
-                            <div>
-                                <span class="about__information-subtitle">Problem Solving </span>
-                                <span class="about__information-subtitle-small">Codechef(3*), Leetcode(3*)</span>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-        </section>
-        <section class="skills section" id="skills">
-            <span class="section-subtitle">Why Choose Me</span>
-            <h2 class="section-title">My expertise</h2>
-            <div class="skills__container bd-grid">
-                <div class="skills__content">
-                    <h3 class="skills__subtitle">Frontend/Backend</h3>
-                    <div class="skills__data">
-                        <span class="skills__name">Html/css</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__html"></span>
-                    </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">React</span>
-                        <span class="skills__number">40%</span>
-                        <span class="skills__bar skills__react"></span>
-                    </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Django</span>
-                        <span class="skills__number">60%</span>
-                        <span class="skills__bar skills__dj"></span>
-                    </div>
-
-                  
-
-                   
-                </div>
-                <div class="skills__content">
-                    <h3 class="skills__subtitle">Others</h3>
-                    <div class="skills__data">
-                        <span class="skills__name">Git/Github</span>
-                        <span class="skills__number">85%</span>
-                        <span class="skills__bar skills__git"></span>
-                    </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Dsa in c++</span>
-                        <span class="skills__number">60%</span>
-                        <span class="skills__bar skills__dsa"></span>
-                    </div>
-                    <div class="skills__data">
-                        <span class="skills__name">Python</span>
-                        <span class="skills__number">55%</span>
-                        <span class="skills__bar skills__py"></span>
-                    </div>
-
-                    
-                </div>
-
-            </div>
-        </section>
-        <section class="education">
-            <span class="section-subtitle">Qualifications</span>
-            <h2 class="section-title">My Education</h2>
-
-            <div class="education__container bd-grid">
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2019-2023</h3>
-                        <span class="education__university">Gyan Ganga Institute Of Technology And Sciences</span>
-                    </div>
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-                    <div>
-                        <h3 class="education__race">Btech CSE</h3>
-                        <span class="education__speciality">Schooling</span>
-                    </div>
-                </div>
-            </div>
-            <div class="education__container bd-grid">
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2018-2019</h3>
-                        <span class="education__university">St.Xavier's High School</span>
-                    </div>
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-                    <div>
-                        <h3 class="education__race">Class 12th</h3>
-                        <span class="education__speciality">Schooling</span>
-                    </div>
-                </div>
-            </div>
-            <div class="education__container bd-grid">
-                <div class="education__content">
-                    <div>
-                        <h3 class="education__year">2016-2017</h3>
-                        <span class="education__university">St.Xavier's High School</span>
-                    </div>
-                    <div class="education__time">
-                        <span class="education__rounder"></span>
-                        <span class="education__line"></span>
-                    </div>
-                    <div>
-                        <h3 class="education__race">Class 10th</h3>
-                        <span class="education__speciality">Schooling</span>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="services section" id="services">
-            <span class="section-subtitle">My works</span>
-            <h2 class="section-title">PROJECTS</h2>
-            <div class="services__container bd-grid">
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Menstruated</h3>
-                    <p class="services__description">
-                        Menstruated is a place where women share their first-period stories, feelings, emotions through blogs. Can track your periods and get notified early through the mail. They should know that you are not alone in the fight against PCOS by-polls which shown in the graph and many other questions. Can know the myths/facts, self-care during periods, and much more.
-                    </p>
-                    <a href="http://menstruated.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Web Compiler</h3>
-                    <p class="services__description">
-                        Web-compiler is a react web app on which you can write your HTML, CSS, JS code and also preview the changes simultaneously. It comes in handy when you are designing something. It's useful to web developers.
-                    </p>
-                    <a href="https://yashikajotwani12.github.io/Web-Compiler/" class="button contact__button project__button">Have a Look!</a>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Pcodlive</h3>
-                    <p class="services__description">
-                        This is a blog website has been made through django, where women with PCOD/PCOS can share their thoughts and and also can read about other's experiences.
-                    </p>
-                    <a href="pcodlive.herokuapp.com/blog/" class="button contact__button project__button">Have a Look!</a>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Polling Graph</h3>
-                    <p class="services__description">
-                       Polling Graph, you can add questions to this and actually view the result based graph, which tells you the number of people voted for which particular option.
-                    </p>
-                    <a href="https://polledin.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Periods Date Reminder</h3>
-                    <p class="services__description">
-                       Periods Date Reminder is a webapp, made through Django which basically ask the user to register their last period date and give send them mails automatically before their period date arrive so they can be carefull, and take care about their periods.
-                    </p>
-                    <a href="https://remindmemyperiods.herokuapp.com/" class="button contact__button project__button">Have a Look!</a>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Open Source Projects</h3>
-                    <p class="services__description">
-                       Being a part of GirlsScript Summer Of Code'21, I contributed to some projects in c++, html,css,js. 
-                    </p>
-                    <a href="https://github.com/pulls?q=is%3Apr+author%3Ayashikajotwani12+archived%3Afalse+is%3Aopen" class="button contact__button project__button">Have a Look!</a>
-                </div>
-
-            </div>
-
-        </section>
-        <section class="project section">
-            <div class="project__container bd-grid">
-                <div class="project__data">
-                    <h2 class="section-title project__title">My projects
-
-                    </h2>
-                    <p class="project__description">All my projects which i have made till date have been published in
-                        my github account, If you find them instresting or helpful or find any issue or bug, them do
-                        make and issue, otherwise do give it a star.</p>
-                    <a href="https://github.com/yashikajotwani12" class="button button__light">Github</a>
-                </div>
-                <img src="" alt="" class="project__img">
-
-            </div>
+							<!-- Right Col for Description -->
+							<div class="col-md-9">
+								<section>
+									<h3>Description</h1>
+										<p>
+											OpenSource | Problem Solving | FullStack Developer
+										</p>
+										<p>
+											I'm currently a CSE undergraduate, focusing mainly to improve myself as a
+											Developer, I use Django and Reactjs, I do problem solving regularly to
+											enhace my logical ability.
+										</p>
+										<p>
+											I love to collaborate and participate in Hackathons and build projects, I
+											would love to help in community by sharing my knowledge.
+										</p>
+								</section>
+								<section>
+									<h3>Skills</h3>
+									<div class="item">
+										<div class="row">
+											<div id="buttons">
 
 
-        </section>
-        <!-- <section class="works section" id="works">
-            <span class="section-subtitle">My Portfolio</span>
-            <h2 class="section-title">Recent works</h2>
-            <div class="works__container bd-grid">
-                <div class="works__img">
-                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="assets/img/computer-laptop-with-white-frame-paper-cards-pink-color-background_9555-256.jpg"
-                        alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
-                <div class="works__img">
-                    <img src="assets/img/flat-laptop-icon-transparent-png-svg-vector-10.png" alt="">
-                    <div class="works__data">
-                        <a href="" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Work1</span>
-                    </div>
-                </div>
+												<a href="#" class="btn purple">C</a>
+												<a href="#" class="btn purple">C++</a>
+												<a href="#" class="btn purple">Python</a>
+												<a href="#" class="btn purple">HTML</a>
+												<a href="#" class="btn purple">CSS3</a>
+												<a href="#" class="btn purple">Django</a>
+												<a href="#" class="btn purple">Django Rest Framework</a>
+												<a href="#" class="btn purple">Git</a>
+												<a href="#" class="btn purple">GitHub</a>
+												<a href="#" class="btn purple">MySQL</a>
+												<a href="#" class="btn purple">OS</a>
+												<a href="#" class="btn purple">DBMS</a>
+												<a href="#" class="btn purple">Data Structures</a>
+												<a href="#" class="btn purple">Algorithms</a>
 
-            </div>
-        </section> -->
-        <section class="contact section" id="contact">
-            <span class="section-subtitle">Contact Me</span>
-            <h2 class="section-title">Get In Touch</h2>
+											</div>
+										</div>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+										<h3>Education</h3>
+										<div class="Education">
+											<h4>Gyan Ganga Institute Of Technology And Sciences</h3>
+												<p>Bachelors Of Technology</p>
+												<p>Computer Science</p>
+												<p>CGPA: 9.47</p>
+												<br>
+												<h4>St. Xavier's High School</h3>
+													<p>12th</p>
+													<p>Percentage: 91%</p>
+													<br>
 
-                    </div>
-                    <input type="text" placeholder="Project" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                    <input type="submit" value="Send Message" class="button contact__button">
-                </form>
-                <div class="me">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Call Me</h3>
-                        <span class="contact__text">903-999-3918</span>
-                        
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">E-mail</h3>
-                        <span class="contact__text">yashikajothwani39@gmail.com</span>
-                        
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">Location</h3>
-                        <span class="contact__text">INDIA</span>
-                        <span class="contact__text">Jabalpur</span>
-                    </div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                </div>
+	<!-- Experience Modal -->
+	<div class="modal fade" id="modal-experience" tabindex="-1" role="dialog" aria-labelledby="modal-experience-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-projects-label">Experience</h2>
+					</div>
+					<div class="modal-body">
+						<!-- Project Category 1 -->
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Open source</h3>
+							<p>
+								Listing my work in open source programs.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="OpenWisp">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/openwisp/">OpenWisp</a>
+												</h3>
+												- My PR's: <a
+													href="https://github.com/pulls?q=+is%3Apr+author%3Ayashikajotwani12+archived%3Afalse+org%3Aopenwisp"
+													target="_blank"><i class="fa fa-github"></i></a>
+												<p class="text">- A Hackable Network Management System for the 21st Century
+												</p>
+												<p class="text">- OpenWISP is a modular network management system built on top of OpenWRT (but designed to allow supporting multiple embedded operating systems) that allows managing and automating several aspects of IT network deployment, monitoring and management.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
 
-            </div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="os3">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://gssoc.girlscript.tech/">Girls script Summer of
+														Codes</a></h3>
+												- My PR's: <a
+													href="https://github.com/pulls?page=2&q=is%3Apr+author%3Ayashikajotwani12+archived%3Afalse"
+													target="_blank"><i class="fa fa-github"></i></a>
+												<p class="text">- GirlScript Summer of Code is the 3 month long Open
+													Source program during summers conducted by GirlScript Foundation,
+													started in 2018.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="os2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/issues?q=is%3Apr+author%3Ayashikajotwani12+archived%3Afalse+label%3Ahacktoberfest-accepted">Hacktoberfest
+														2021</a></h3>
+												<p class="text">- My 7 PR's got merged.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-        </section>
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Community</h3>
+							<p>
+								Listing some Community I am part of.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="mlsa">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Beta</span>
+												<h3 class="title"><a target="_blank"
+														href="https://studentambassadors.microsoft.com/en-US/profile/116327">Microsoft
+														Learn Student Ambassador</a> </h3>
+												<p class="text">- The Microsoft Learn Student Ambassadors is a program
+													to sponsor students majoring in disciplines related to technology.
+												</p>
+												<p class="text">- I have been a host of an event where I guide folks to
+													start with react.</p>
+												<p class="text">- I have been a cohost of an event where I guide folks
+													about open-source,git and github.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
 
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="cm2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Techical Core Lead</span>
+												<h3 class="title"><a target="_blank"
+														href=http://ecell.ggits.org/">Entrepreneurship-Cell(UDYAM
+														GGITS)</a></h3>
+												<p class="text">- Organize technical sessions, workshops,Manage
+													Inductions and Outreach.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    </main>
-    <!-- <footer class="footer">
-        <div class="footer__container bd-grid">
-            <h1 class="footer__title"> Yashika </h1>
-            <p class="footer__description">
-                Lorem ipsum dolor sit.
-            </p>
-            <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-            </div>
-            <p class="footer__copy">All right reserved by yashikajotwani - 2021</p>
+	<!-- Projects Modal -->
+	<div class="modal fade" id="modal-projects" tabindex="-1" role="dialog" aria-labelledby="modal-projects-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-projects-label">Projects</h2>
+					</div>
+					<div class="modal-body">
+						<!-- Project Category 1 -->
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Development Projects</h3>
+							<p>
+								Top Projects
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Django</h5>
+												</span>
+												<h3 class="title"><a target="_blank" href="http://menstruated.herokuapp.com
+													">Menstruated</a></h3>
+												<p class="text">Menstruated is a place where women share their
+													first-period stories, feelings, emotions through blogs. Can track
+													your periods and get notified early through the mail. They should
+													know that you are not alone in the fight against PCOS by-polls which
+													shown in the graph and many other questions. Can know the
+													myths/facts, self-care during periods.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Django</h5>
+												</span>
+												<h3 class="title"><a target="_blank"
+														href="https://devmeet1o1.herokuapp.com/">Devmeet</a></h3>
+												<p class="text">About
+													Devmeet is a place where people who are interested in the
+													development and want to learn/share/discuss/start can create a room
+													with a proper heading and description (purpose of creating the
+													room). You can view the recent activity going on and can search and
+													explore different rooms. Can chat and share your opinions/resolve
+													someone's doubts.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project3 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Reactjs</h5>
+												</span>
+												<span class="type"></span>
+												<h3 class="title"><a target="_blank"
+														href="https://yashikajotwani12.github.io/Web-Compiler/">Web
+														Compiler</a></h3>
+												<p class="text">Web-compiler is a react web app on which you can write
+													your HTML, CSS, JS code and also preview the changes simultaneously.
+													It comes in handy when you are designing something. It's useful to
+													web developers.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-        </div>
-    </footer> -->
+						<!-- Project Category 2 -->
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project4 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Language Used: C++</h5>
+												</span>
+												<span class="type"></span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/yashikajotwani12/DataStructures_Algorithms">Data
+														Structures And Algorithms</a></h3>
+												<p class="text"> I am maintaining this repository and practicing
+													problem-solving daily, This repository would contain all the
+													important links and questions. If you want to contribute you can
+													also add resources or submit questions.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project5 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Hackathon Project</span>
+												<h3 class="title"><a target="_blank"
+														href="hhttps://finnova.herokuapp.com/home/">Finnova</a></h3>
+												<p class="text">FinNOVA focuses on women empowerment in the field of
+													finance, investing and cryptocurrency. It allows women of all
+													backgrounds and ages along with young individuals or a person who is
+													willing to have a platform where they can educate themselves on
+													cryptocurrency through a variety of options. FinNOVA includes
+													quizzes in various levels ranging from easy, intermediate and
+													difficult, latest news/updates on crypto, educational videos and a
+													cryptobot! It is an engaging platform where they can increase their
+													knowledge through challenging themselves by doing the quizzes,
+													asking questions within the cryptobot and being
+													knowledgeable/updated on the latest news within the stock market!
+												</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project7 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Django</h5>
+												</span>
 
-    <script src="assets/js/main.js"></script>
+												<h3 class="title"><a target="_blank"
+														href="https://letsuschat.herokuapp.com/">Chatting App</a></h3>
+												<p class="text">Chatting App with different Rooms</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
+						<!-- Project Category 3 -->
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project6 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Django</h5>
+												</span>
+
+												<h3 class="title"><a target="_blank"
+														href="http://balanced-me.herokuapp.com/home/">Balanced me</a>
+												</h3>
+												<p class="text">Planner for women to take care and plan everything they
+													should.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project8 card">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">
+													<h5>Technology Used: Django</h5>
+												</span>
+
+												<h3 class="title"><a target="_blank"
+														href="https://polledin.herokuapp.com/s">Polling App</a></h3>
+												<p class="text">Questions to make Polls and results shown in form of
+													graph.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal-projects" tabindex="-1" role="dialog" aria-labelledby="modal-projects-label">
+			<div class="modal-dialog" role="document">
+				<div class="container">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+									aria-hidden="true">&times;</span></button>
+							<h2 class="modal-title" id="modal-projects-label">Exper</h2>
+						</div>
+						<div class="modal-body">
+							<!-- Project Category 1 -->
+							<div style="margin-bottom: 1.875rem;">
+								<h3>Development Projects</h3>
+								<p>
+									Top Projects
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<div class="project1 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Django</h5>
+													</span>
+													<h3 class="title"><a target="_blank" href="http://menstruated.herokuapp.com
+												">Menstruated</a></h3>
+													<p class="text">Menstruated is a place where women share their
+														first-period stories, feelings, emotions through blogs. Can
+														track your periods and get notified early through the mail. They
+														should know that you are not alone in the fight against PCOS
+														by-polls which shown in the graph and many other questions. Can
+														know the myths/facts, self-care during periods.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="project2 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Django</h5>
+													</span>
+													<h3 class="title"><a target="_blank"
+															href="https://devmeet1o1.herokuapp.com/">Devmeet</a></h3>
+													<p class="text">About
+														Devmeet is a place where people who are interested in the
+														development and want to learn/share/discuss/start can create a
+														room with a proper heading and description (purpose of creating
+														the room). You can view the recent activity going on and can
+														search and explore different rooms. Can chat and share your
+														opinions/resolve someone's doubts.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="project3 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Reactjs</h5>
+													</span>
+													<span class="type"></span>
+													<h3 class="title"><a target="_blank"
+															href="https://yashikajotwani12.github.io/Web-Compiler/">Web
+															Compiler</a></h3>
+													<p class="text">Web-compiler is a react web app on which you can
+														write your HTML, CSS, JS code and also preview the changes
+														simultaneously. It comes in handy when you are designing
+														something. It's useful to web developers.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Category 2 -->
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<div class="project4 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Language Used: C++</h5>
+													</span>
+													<span class="type"></span>
+													<h3 class="title"><a target="_blank"
+															href="https://github.com/yashikajotwani12/DataStructures_Algorithms">Data
+															Structures And Algorithms</a></h3>
+													<p class="text"> I am maintaining this repository and practicing
+														problem-solving daily, This repository would contain all the
+														important links and questions. If you want to contribute you can
+														also add resources or submit questions.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="project5 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">Hackathon Project</span>
+													<h3 class="title"><a target="_blank"
+															href="hhttps://finnova.herokuapp.com/home/">Finnova</a></h3>
+													<p class="text">FinNOVA focuses on women empowerment in the field of
+														finance, investing and cryptocurrency. It allows women of all
+														backgrounds and ages along with young individuals or a person
+														who is willing to have a platform where they can educate
+														themselves on cryptocurrency through a variety of options.
+														FinNOVA includes quizzes in various levels ranging from easy,
+														intermediate and difficult, latest news/updates on crypto,
+														educational videos and a cryptobot! It is an engaging platform
+														where they can increase their knowledge through challenging
+														themselves by doing the quizzes, asking questions within the
+														cryptobot and being knowledgeable/updated on the latest news
+														within the stock market!</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="project7 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Django</h5>
+													</span>
+
+													<h3 class="title"><a target="_blank"
+															href="https://letsuschat.herokuapp.com/">Chatting App</a>
+													</h3>
+													<p class="text">Chatting App with different Rooms</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Category 3 -->
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<div class="project6 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Django</h5>
+													</span>
+
+													<h3 class="title"><a target="_blank"
+															href="http://balanced-me.herokuapp.com/home/">Balanced
+															me</a></h3>
+													<p class="text">Planner for women to take care and plan everything
+														they should.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="project8 card">
+										<div class="wrapper">
+											<div class="data">
+												<div class="content">
+													<span class="type">
+														<h5>Technology Used: Django</h5>
+													</span>
+
+													<h3 class="title"><a target="_blank"
+															href="https://polledin.herokuapp.com/s">Polling App</a></h3>
+													<p class="text">Questions to make Polls and results shown in form of
+														graph.</p>
+													<label for="show-menu" class="menu-button"><span></span></label>
+												</div>
+												<input type="checkbox" id="show-menu" />
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bootstrap Scripts -->
+			<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+				integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+				integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+				crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+				integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+				crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+				integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+				crossorigin="anonymous"></script>
+			<!-- Sketch.js -->
+			<script src="assets/js/sketch.min.js"></script>
+
+			<!-- Project JS File -->
+			<script src="assets/js/script.js"></script>
 </body>
 
 </html>
