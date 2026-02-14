@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-stone-100 text-stone-900 font-sans;
+}
+
+.dark body {
+  @apply bg-stone-950 text-stone-100;
+}
+
+::selection {
+  @apply bg-stone-900 text-stone-50;
+}
+
+.dark ::selection {
+  @apply bg-stone-100 text-stone-900;
+}
+
+/* Gradient mesh background */
+.bg-mesh {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-mesh .blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 20s ease-in-out infinite;
+}
+
+.bg-mesh .blob-1 {
+  width: 500px;
+  height: 500px;
+  background: #c4b5a4;
+  opacity: 0.5;
+  top: -5%;
+  right: -5%;
+}
+
+.bg-mesh .blob-2 {
+  width: 400px;
+  height: 400px;
+  background: #a8a29e;
+  opacity: 0.4;
+  bottom: 5%;
+  left: -5%;
+  animation-delay: -7s;
+}
+
+.bg-mesh .blob-3 {
+  width: 350px;
+  height: 350px;
+  background: #d6d3d1;
+  opacity: 0.35;
+  top: 40%;
+  left: 30%;
+  animation-delay: -14s;
+}
+
+.dark .bg-mesh .blob-1 {
+  background: #78716c;
+  opacity: 0.3;
+}
+
+.dark .bg-mesh .blob-2 {
+  background: #57534e;
+  opacity: 0.25;
+}
+
+.dark .bg-mesh .blob-3 {
+  background: #44403c;
+  opacity: 0.3;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+}
+
+/* Glass utility */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass {
+  background: rgba(28, 25, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-subtle {
+  background: rgba(28, 25, 23, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
