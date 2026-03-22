@@ -7,11 +7,13 @@ html {
 }
 
 body {
-  @apply bg-stone-100 text-stone-900 font-sans;
+  @apply text-stone-900 font-sans;
+  background-color: #faf7f2;
 }
 
 .dark body {
-  @apply bg-stone-950 text-stone-100;
+  @apply text-stone-100;
+  background-color: #141210;
 }
 
 ::selection {
@@ -31,55 +33,98 @@ body {
   pointer-events: none;
 }
 
+/* Vignette effect */
+.bg-mesh::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(30, 20, 10, 0.18) 100%);
+  z-index: 2;
+}
+
+.dark .bg-mesh::after {
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+/* Grain texture */
+.bg-mesh::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.055;
+  z-index: 1;
+  animation: grain 8s steps(2) infinite;
+}
+
+.dark .bg-mesh::before {
+  opacity: 0.07;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10%       { transform: translate(-2%, -3%); }
+  20%       { transform: translate(3%, 2%); }
+  30%       { transform: translate(-1%, 4%); }
+  40%       { transform: translate(4%, -1%); }
+  50%       { transform: translate(-3%, 1%); }
+  60%       { transform: translate(2%, 3%); }
+  70%       { transform: translate(-4%, -2%); }
+  80%       { transform: translate(1%, -4%); }
+  90%       { transform: translate(3%, 3%); }
+}
+
 .bg-mesh .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  animation: float 20s ease-in-out infinite;
+  filter: blur(90px);
+  animation: float 22s ease-in-out infinite;
 }
 
 .bg-mesh .blob-1 {
-  width: 500px;
-  height: 500px;
-  background: #c4b5a4;
-  opacity: 0.5;
-  top: -5%;
-  right: -5%;
+  width: 560px;
+  height: 560px;
+  background: #e8c99a;
+  opacity: 0.55;
+  top: -8%;
+  right: -8%;
 }
 
 .bg-mesh .blob-2 {
-  width: 400px;
-  height: 400px;
-  background: #a8a29e;
+  width: 420px;
+  height: 420px;
+  background: #d4a574;
   opacity: 0.4;
   bottom: 5%;
   left: -5%;
-  animation-delay: -7s;
+  animation-delay: -8s;
 }
 
 .bg-mesh .blob-3 {
-  width: 350px;
-  height: 350px;
-  background: #d6d3d1;
-  opacity: 0.35;
+  width: 360px;
+  height: 360px;
+  background: #f0d9b5;
+  opacity: 0.45;
   top: 40%;
   left: 30%;
-  animation-delay: -14s;
+  animation-delay: -15s;
 }
 
 .dark .bg-mesh .blob-1 {
-  background: #78716c;
-  opacity: 0.3;
+  background: #7c4e2a;
+  opacity: 0.35;
 }
 
 .dark .bg-mesh .blob-2 {
-  background: #57534e;
-  opacity: 0.25;
+  background: #5c3318;
+  opacity: 0.3;
 }
 
 .dark .bg-mesh .blob-3 {
-  background: #44403c;
-  opacity: 0.3;
+  background: #3d2410;
+  opacity: 0.35;
 }
 
 @keyframes float {
@@ -96,25 +141,25 @@ body {
 
 /* Glass utility */
 .glass {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(252, 245, 235, 0.65);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(200, 170, 130, 0.25);
 }
 
 .dark .glass {
-  background: rgba(28, 25, 23, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 14, 8, 0.65);
+  border: 1px solid rgba(200, 160, 100, 0.1);
 }
 
 .glass-subtle {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(12px) saturate(150%);
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(252, 245, 235, 0.45);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(200, 170, 130, 0.18);
 }
 
 .dark .glass-subtle {
-  background: rgba(28, 25, 23, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(20, 14, 8, 0.45);
+  border: 1px solid rgba(200, 160, 100, 0.08);
 }

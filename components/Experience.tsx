@@ -4,32 +4,46 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    company: "Tech Corp",
-    role: "Senior Frontend Developer",
-    period: "2024 — Present",
+    company: "HackerRank",
+    role: "SDE 2",
+    period: "Mar 2025 — Present",
     description:
-      "Leading the frontend architecture and building scalable web applications with React and TypeScript. Mentoring junior developers and driving best practices.",
+      "Working as a backend engineer, building and maintaining scalable systems that power HackerRank's platform.",
   },
   {
-    company: "StartupXYZ",
-    role: "Full Stack Developer",
-    period: "2022 — 2024",
+    company: "HackerRank",
+    role: "SDE 1",
+    period: "2024 — Mar 2025",
     description:
-      "Built and shipped multiple products from scratch using Next.js and Node.js. Implemented CI/CD pipelines and improved deployment workflows.",
+      "Joined as a full-time backend engineer, contributing to core platform development and scaling backend services.",
   },
   {
-    company: "Digital Agency",
-    role: "Frontend Developer",
-    period: "2021 — 2022",
+    company: "HackerRank",
+    role: "Software Developer Intern",
+    period: "2023",
     description:
-      "Developed responsive web applications and interactive interfaces for various clients. Worked closely with designers to deliver pixel-perfect implementations.",
+      "Interned on the engineering team, contributing to backend development and gaining hands-on experience with production systems.",
   },
   {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "2020 — 2021",
+    company: "Google Summer of Code — OpenWisp",
+    role: "Open Source Contributor",
+    period: "2022",
     description:
-      "Designed and developed websites and web applications for small businesses and startups. Managed projects end-to-end from requirements to deployment.",
+      "Selected for GSoC 2022 with OpenWisp, an open-source network management project. Contributed to core features and collaborated with the global open-source community.",
+  },
+  {
+    company: "Major League Hacking Fellowship — Solana Labs",
+    role: "MLH Fellow",
+    period: "2022",
+    description:
+      "Participated in the MLH Fellowship program, working on projects in collaboration with Solana Labs.",
+  },
+  {
+    company: "Suborbital",
+    role: "GitHub Extern",
+    period: "2022",
+    description:
+      "Contributed to open-source projects at Suborbital as part of the GitHub Externship program.",
   },
 ];
 

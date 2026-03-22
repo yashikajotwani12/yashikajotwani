@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, Montserrat } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const libre = Libre_Baskerville({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-libre",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant",
 });
 
 const montserrat = Montserrat({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${libre.variable} ${montserrat.variable} font-sans`}>
+      <body className={`${cormorant.variable} ${montserrat.variable} font-sans`}>
         <ThemeProvider>
           <div className="bg-mesh">
             <div className="blob blob-1" />
