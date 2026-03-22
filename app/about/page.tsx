@@ -8,7 +8,7 @@ export default function AboutPage() {
       <PageWrapper>
         <Experience />
         <div className="max-w-4xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="h-px w-full bg-stone-200 dark:bg-stone-800" />
+          <div className="h-px w-full bg-neutral-200 dark:bg-neutral-800" />
         </div>
         <About />
       </PageWrapper>

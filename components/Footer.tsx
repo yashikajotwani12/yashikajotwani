@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="py-8 px-6 sm:px-12 lg:px-24 glass border-t border-white/20 dark:border-white/5">
       <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-stone-500 dark:text-stone-400">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           &copy; {new Date().getFullYear()} Yashika Jotwani. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
@@ -10,7 +10,7 @@ export default function Footer() {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
             aria-label="GitHub"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ export default function Footer() {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
             aria-label="LinkedIn"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ export default function Footer() {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
             aria-label="Twitter"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

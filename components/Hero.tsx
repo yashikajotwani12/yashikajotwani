@@ -10,13 +10,13 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-stone-900 dark:text-stone-100">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
           Hey, I&apos;m Yashika
         </h1>
-        <p className="mt-2 text-sm font-medium uppercase tracking-widest text-stone-500 dark:text-stone-400">
+        <p className="mt-2 text-sm font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
           Software Developer
         </p>
-        <p className="mt-6 text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl">
+        <p className="mt-6 text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           A developer and designer passionate about building elegant, performant
           web applications. I focus on writing clean code and creating intuitive
           user experiences.
@@ -32,16 +32,16 @@ export default function Hero() {
         <div className="flex items-center gap-3">
           <a
             href="mailto:hello@yashika.dev"
-            className="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+            className="text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
           >
             hello@yashika.dev
           </a>
-          <span className="text-stone-300 dark:text-stone-700">|</span>
+          <span className="text-neutral-300 dark:text-neutral-700">|</span>
           <a
             href="https://github.com/yashikajotwani12"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-lg text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all"
+            className="p-1.5 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-all"
             aria-label="GitHub"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export default function Hero() {
             href="https://linkedin.com/in/yashikajotwani"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-lg text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all"
+            className="p-1.5 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-all"
             aria-label="LinkedIn"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@ export default function Hero() {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-lg text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all"
+            className="p-1.5 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-all"
             aria-label="Twitter"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

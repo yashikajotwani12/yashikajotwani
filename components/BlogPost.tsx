@@ -26,7 +26,7 @@ function renderContent(content: string) {
           key={`code-${i}`}
           className="my-6 p-4 glass-subtle rounded-xl overflow-x-auto text-sm leading-relaxed"
         >
-          <code className="text-stone-800 dark:text-stone-200">
+          <code className="text-neutral-800 dark:text-neutral-200">
             {codeLines.join("\n")}
           </code>
         </pre>
@@ -39,7 +39,7 @@ function renderContent(content: string) {
       elements.push(
         <h2
           key={`h2-${i}`}
-          className="text-2xl font-serif font-bold text-stone-900 dark:text-stone-100 mt-10 mb-4"
+          className="text-2xl font-serif font-bold text-neutral-900 dark:text-neutral-100 mt-10 mb-4"
         >
           {line.slice(3)}
         </h2>
@@ -52,7 +52,7 @@ function renderContent(content: string) {
       elements.push(
         <h3
           key={`h3-${i}`}
-          className="text-xl font-serif font-bold text-stone-900 dark:text-stone-100 mt-8 mb-3"
+          className="text-xl font-serif font-bold text-neutral-900 dark:text-neutral-100 mt-8 mb-3"
         >
           {line.slice(4)}
         </h3>
@@ -71,7 +71,7 @@ function renderContent(content: string) {
       elements.push(
         <ol
           key={`ol-${i}`}
-          className="my-4 ml-6 list-decimal space-y-2 text-stone-700 dark:text-stone-300 leading-relaxed"
+          className="my-4 ml-6 list-decimal space-y-2 text-neutral-700 dark:text-neutral-300 leading-relaxed"
         >
           {listItems.map((item, idx) => (
             <li key={idx}>{renderInline(item)}</li>
@@ -91,7 +91,7 @@ function renderContent(content: string) {
       elements.push(
         <ul
           key={`ul-${i}`}
-          className="my-4 ml-6 list-disc space-y-2 text-stone-700 dark:text-stone-300 leading-relaxed"
+          className="my-4 ml-6 list-disc space-y-2 text-neutral-700 dark:text-neutral-300 leading-relaxed"
         >
           {listItems.map((item, idx) => (
             <li key={idx}>{renderInline(item)}</li>
@@ -111,7 +111,7 @@ function renderContent(content: string) {
     elements.push(
       <p
         key={`p-${i}`}
-        className="my-4 text-stone-700 dark:text-stone-300 leading-relaxed"
+        className="my-4 text-neutral-700 dark:text-neutral-300 leading-relaxed"
       >
         {renderInline(line)}
       </p>
@@ -157,7 +157,7 @@ function renderInline(text: string): React.ReactNode {
 
     if (first.type === "bold") {
       parts.push(
-        <strong key={key++} className="font-semibold text-stone-900 dark:text-stone-100">
+        <strong key={key++} className="font-semibold text-neutral-900 dark:text-neutral-100">
           {first.match![1]}
         </strong>
       );
@@ -166,7 +166,7 @@ function renderInline(text: string): React.ReactNode {
       parts.push(
         <code
           key={key++}
-          className="px-1.5 py-0.5 text-sm glass-subtle rounded text-stone-800 dark:text-stone-200"
+          className="px-1.5 py-0.5 text-sm glass-subtle rounded text-neutral-800 dark:text-neutral-200"
         >
           {first.match![1]}
         </code>
@@ -195,7 +195,7 @@ export default function BlogPost({ post }: { post: Post }) {
     >
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors mb-8"
+        className="inline-flex items-center gap-1 text-sm text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors mb-8"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
@@ -204,17 +204,17 @@ export default function BlogPost({ post }: { post: Post }) {
       </Link>
 
       <header className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-stone-900 dark:text-stone-100">
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
           {post.title}
         </h1>
-        <div className="mt-4 flex items-center gap-3 text-sm text-stone-500 dark:text-stone-400">
+        <div className="mt-4 flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400">
           <span>{post.date}</span>
           <span>&middot;</span>
           <span>{post.readTime}</span>
         </div>
       </header>
 
-      <div className="border-t border-stone-200 dark:border-stone-800 pt-8">
+      <div className="border-t border-neutral-200 dark:border-neutral-800 pt-8">
         {renderContent(post.content)}
       </div>
     </motion.article>

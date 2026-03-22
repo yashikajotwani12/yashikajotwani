@@ -13,10 +13,10 @@ export default function Log() {
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-stone-900 dark:text-stone-100">
+        <h2 className="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
           Log
         </h2>
-        <p className="mt-2 text-stone-500 dark:text-stone-400">
+        <p className="mt-2 text-neutral-500 dark:text-neutral-400">
           Thinking out loud while building.
         </p>
       </motion.div>
@@ -34,13 +34,13 @@ export default function Log() {
               href={`/log/${post.slug}`}
               className="group flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0 py-2"
             >
-              <span className="text-sm text-stone-400 dark:text-stone-500 font-mono shrink-0 sm:w-36">
+              <span className="text-sm text-neutral-400 dark:text-neutral-500 font-mono shrink-0 sm:w-36">
                 {post.date}
               </span>
-              <span className="hidden sm:inline text-stone-300 dark:text-stone-600 mx-3">
+              <span className="hidden sm:inline text-neutral-300 dark:text-neutral-600 mx-3">
                 &raquo;
               </span>
-              <span className="text-stone-900 dark:text-stone-100 group-hover:text-stone-500 dark:group-hover:text-stone-400 transition-colors">
+              <span className="text-neutral-900 dark:text-neutral-100 group-hover:text-neutral-500 dark:group-hover:text-neutral-400 transition-colors">
                 {post.title}
               </span>
             </Link>

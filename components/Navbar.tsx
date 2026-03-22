@@ -37,7 +37,7 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="text-xl font-serif font-bold tracking-tight text-stone-900 dark:text-stone-100"
+          className="text-xl font-serif font-bold tracking-tight text-neutral-900 dark:text-neutral-100"
         >
           YJ
         </Link>
@@ -51,8 +51,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm transition-colors duration-200 ${
                     pathname === link.href
-                      ? "text-stone-900 dark:text-stone-100 font-medium"
-                      : "text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+                      ? "text-neutral-900 dark:text-neutral-100 font-medium"
+                      : "text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
                   }`}
                 >
                   {link.label}
@@ -66,7 +66,7 @@ export default function Navbar() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+              className="hidden sm:block text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
               aria-label="GitHub"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ export default function Navbar() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+              className="hidden sm:block text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ export default function Navbar() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+              className="hidden sm:block text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
               aria-label="Twitter"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="sm:hidden p-2 rounded-lg glass-subtle text-stone-600 dark:text-stone-400"
+              className="sm:hidden p-2 rounded-lg glass-subtle text-neutral-600 dark:text-neutral-400"
               aria-label="Toggle menu"
             >
               {menuOpen ? (
@@ -132,8 +132,8 @@ export default function Navbar() {
                     href={link.href}
                     className={`block px-4 py-3 rounded-lg text-sm transition-colors ${
                       pathname === link.href
-                        ? "text-stone-900 dark:text-stone-100 font-medium glass-subtle"
-                        : "text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+                        ? "text-neutral-900 dark:text-neutral-100 font-medium glass-subtle"
+                        : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
                     }`}
                   >
                     {link.label}
@@ -146,7 +146,7 @@ export default function Navbar() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -157,7 +157,7 @@ export default function Navbar() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -168,7 +168,7 @@ export default function Navbar() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

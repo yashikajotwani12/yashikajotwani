@@ -30,11 +30,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${cormorant.variable} ${montserrat.variable} font-sans`}>
         <ThemeProvider>
-          <div className="bg-mesh">
-            <div className="blob blob-1" />
-            <div className="blob blob-2" />
-            <div className="blob blob-3" />
-          </div>
+          <div className="paper-texture" />
           <div className="flex flex-col min-h-screen relative z-10">
             <Navbar />
             <div className="flex-1">{children}</div>

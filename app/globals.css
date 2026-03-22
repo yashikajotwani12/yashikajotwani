@@ -7,159 +7,79 @@ html {
 }
 
 body {
-  @apply text-stone-900 font-sans;
-  background-color: #faf7f2;
+  @apply text-neutral-900 font-sans;
+  background-color: #f5f0e8;
 }
 
 .dark body {
-  @apply text-stone-100;
-  background-color: #141210;
+  @apply text-neutral-200;
+  background-color: #111111;
 }
 
 ::selection {
-  @apply bg-stone-900 text-stone-50;
+  @apply bg-neutral-900 text-neutral-50;
 }
 
 .dark ::selection {
-  @apply bg-stone-100 text-stone-900;
+  @apply bg-neutral-200 text-neutral-900;
 }
 
-/* Gradient mesh background */
-.bg-mesh {
+/* Paper texture background */
+.paper-texture {
   position: fixed;
   inset: 0;
   z-index: 0;
-  overflow: hidden;
   pointer-events: none;
 }
 
-/* Vignette effect */
-.bg-mesh::after {
+/* Paper grain — static, no animation */
+.paper-texture::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 50%, rgba(30, 20, 10, 0.18) 100%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='6' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.08;
+  z-index: 1;
+}
+
+.dark .paper-texture::before {
+  opacity: 0.05;
+}
+
+/* Subtle edge darkening — like aged paper */
+.paper-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.06) 100%);
   z-index: 2;
 }
 
-.dark .bg-mesh::after {
-  background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.55) 100%);
+.dark .paper-texture::after {
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.3) 100%);
 }
 
-/* Grain texture */
-.bg-mesh::before {
-  content: '';
-  position: absolute;
-  inset: -50%;
-  width: 200%;
-  height: 200%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-  opacity: 0.055;
-  z-index: 1;
-  animation: grain 8s steps(2) infinite;
-}
-
-.dark .bg-mesh::before {
-  opacity: 0.07;
-}
-
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10%       { transform: translate(-2%, -3%); }
-  20%       { transform: translate(3%, 2%); }
-  30%       { transform: translate(-1%, 4%); }
-  40%       { transform: translate(4%, -1%); }
-  50%       { transform: translate(-3%, 1%); }
-  60%       { transform: translate(2%, 3%); }
-  70%       { transform: translate(-4%, -2%); }
-  80%       { transform: translate(1%, -4%); }
-  90%       { transform: translate(3%, 3%); }
-}
-
-.bg-mesh .blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  animation: float 22s ease-in-out infinite;
-}
-
-.bg-mesh .blob-1 {
-  width: 560px;
-  height: 560px;
-  background: #e8c99a;
-  opacity: 0.55;
-  top: -8%;
-  right: -8%;
-}
-
-.bg-mesh .blob-2 {
-  width: 420px;
-  height: 420px;
-  background: #d4a574;
-  opacity: 0.4;
-  bottom: 5%;
-  left: -5%;
-  animation-delay: -8s;
-}
-
-.bg-mesh .blob-3 {
-  width: 360px;
-  height: 360px;
-  background: #f0d9b5;
-  opacity: 0.45;
-  top: 40%;
-  left: 30%;
-  animation-delay: -15s;
-}
-
-.dark .bg-mesh .blob-1 {
-  background: #7c4e2a;
-  opacity: 0.35;
-}
-
-.dark .bg-mesh .blob-2 {
-  background: #5c3318;
-  opacity: 0.3;
-}
-
-.dark .bg-mesh .blob-3 {
-  background: #3d2410;
-  opacity: 0.35;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(40px, -50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-30px, 30px) scale(0.9);
-  }
-}
-
-/* Glass utility */
+/* Glass utility — now monochrome */
 .glass {
-  background: rgba(252, 245, 235, 0.65);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
-  border: 1px solid rgba(200, 170, 130, 0.25);
+  background: rgba(245, 240, 232, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .dark .glass {
-  background: rgba(20, 14, 8, 0.65);
-  border: 1px solid rgba(200, 160, 100, 0.1);
+  background: rgba(17, 17, 17, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .glass-subtle {
-  background: rgba(252, 245, 235, 0.45);
-  backdrop-filter: blur(12px) saturate(140%);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  border: 1px solid rgba(200, 170, 130, 0.18);
+  background: rgba(245, 240, 232, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .dark .glass-subtle {
-  background: rgba(20, 14, 8, 0.45);
-  border: 1px solid rgba(200, 160, 100, 0.08);
+  background: rgba(17, 17, 17, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
