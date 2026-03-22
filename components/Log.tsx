@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { posts } from "@/data/posts";
 
 export default function Log() {
@@ -20,35 +21,29 @@ export default function Log() {
         </p>
       </motion.div>
 
-      <div className="mt-10 relative">
-        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-stone-300 dark:bg-stone-700" />
-
+      <div className="mt-10 space-y-3">
         {posts.map((post, i) => (
           <motion.div
             key={post.slug}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="relative pl-10 pb-10 last:pb-0 group"
+            transition={{ duration: 0.4, delay: i * 0.06 }}
           >
-            <div className="absolute left-0 top-2 w-[15px] h-[15px] rounded-full border-2 border-stone-400 dark:border-stone-500 bg-white/60 dark:bg-stone-900/60 backdrop-blur-sm group-hover:border-stone-900 dark:group-hover:border-stone-100 group-hover:scale-125 transition-all duration-300" />
-
-            <div className="glass-subtle rounded-xl p-4">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-100">
-                  {post.title}
-                </h3>
-                <div className="flex items-center gap-3 text-sm text-stone-500 dark:text-stone-400 shrink-0">
-                  <span>{post.date}</span>
-                  <span>&middot;</span>
-                  <span>{post.readTime}</span>
-                </div>
-              </div>
-              <p className="mt-2 text-stone-600 dark:text-stone-400 leading-relaxed">
-                {post.description}
-              </p>
-            </div>
+            <Link
+              href={`/log/${post.slug}`}
+              className="group flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0 py-2"
+            >
+              <span className="text-sm text-stone-400 dark:text-stone-500 font-mono shrink-0 sm:w-36">
+                {post.date}
+              </span>
+              <span className="hidden sm:inline text-stone-300 dark:text-stone-600 mx-3">
+                &raquo;
+              </span>
+              <span className="text-stone-900 dark:text-stone-100 group-hover:text-stone-500 dark:group-hover:text-stone-400 transition-colors">
+                {post.title}
+              </span>
+            </Link>
           </motion.div>
         ))}
       </div>

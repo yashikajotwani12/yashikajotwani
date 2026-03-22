@@ -194,13 +194,13 @@ export default function BlogPost({ post }: { post: Post }) {
       className="px-6 sm:px-12 lg:px-24 py-12 sm:py-24 max-w-3xl mx-auto"
     >
       <Link
-        href="/blog"
+        href="/"
         className="inline-flex items-center gap-1 text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors mb-8"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
         </svg>
-        Back to Blog
+        Back
       </Link>
 
       <header className="mb-10">
