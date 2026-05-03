@@ -10,9 +10,5 @@ export default function LogPostPage({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
   if (!post) return notFound();
 
-  return (
-    <main className="pt-24">
-      <BlogPost post={post} />
-    </main>
-  );
+  return <BlogPost post={post} />;
 }
