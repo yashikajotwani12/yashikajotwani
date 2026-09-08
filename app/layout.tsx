@@ -3,7 +3,7 @@ import { Instrument_Serif, JetBrains_Mono, Inter } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CursorHalo from "@/components/CursorHalo";
+
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -26,9 +26,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yashika Jotwani — Portfolio",
+  title: "Yashika Jotwani — Backend Engineer & Creative Thinker",
   description:
-    "A developer and designer drawn to clean code, careful typography, and the quiet space between interactions.",
+    "Backend engineer at HackerRank. Exploring scalable systems, open source, and thoughtful design. Notes and work by Yashika Jotwani.",
 };
 
 export default function RootLayout({
@@ -42,11 +42,11 @@ export default function RootLayout({
         className={`${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans`}
       >
         <ThemeProvider>
-          <CursorHalo />
-          <div className="paper-texture" />
+
+          <a href="#main-content" className="skip-link">Skip to content</a>
           <div className="flex flex-col min-h-screen relative z-10">
             <Navbar />
-            <div className="flex-1">{children}</div>
+            <div className="flex-1" id="main-content">{children}</div>
             <Footer />
           </div>
         </ThemeProvider>

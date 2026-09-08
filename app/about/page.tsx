@@ -202,7 +202,7 @@ export default function AboutPage() {
       <section className="contact-card">
         <div className="glyph">✱</div>
         <h3>
-          Want to <span className="accent">build something quiet</span> together?
+          Want to <span className="accent">build something interesting</span> together?
         </h3>
         <p>
           I read every email. The best ones say what you&apos;re working on and what&apos;s
@@ -222,15 +222,7 @@ export default function AboutPage() {
             <span>github</span>
             <span className="arrow">↗</span>
           </a>
-          <a
-            className="about-cta"
-            href="https://read.cv"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>read.cv</span>
-            <span className="arrow">↗</span>
-          </a>
+
         </div>
       </section>
     </main>
