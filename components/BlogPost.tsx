@@ -324,13 +324,10 @@ export default function BlogPost({ post }: { post: Post }) {
 
         <p className="post-lede">{post.description}</p>
 
-        <div className="star-rule">
-          <span className="star">✱</span>
-        </div>
+        <hr className="article-divider" />
 
         <article className="prose">{renderBody(post.content)}</article>
 
-        <div className="endmark">✱ &nbsp; ✱ &nbsp; ✱</div>
 
         <div className="author-card">
           <div className="avatar">Y</div>
