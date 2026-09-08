@@ -35,7 +35,7 @@ function Mesh({ paused }: { paused: boolean }) {
 export default function Hero(){
  const [paused,setPaused]=useState(false);
  return <section className="lab-hero" id="hero">
-   <div className="hero-kicker mono"><span><i className="status-light"/> BACKEND ENGINEER / CREATIVE THINKER</span><span>DELHI, IN · 28.61° N</span></div>
+   <div className="hero-kicker mono"><span><i className="status-light"/> BACKEND ENGINEER / CREATIVE THINKER</span><span>BANGALORE, IN · 12.97° N</span></div>
    <div className="hero-composition"><div className="hero-copy"><p className="intro-label">Hello, world. I’m</p><h1>Yashika<span>Jotwani<span className="name-dot">.</span></span></h1><p className="hero-description">I build the systems <em>behind the screen.</em><br/>And care about every detail in front of it.</p><div className="hero-actions"><Link href="/about" className="lab-button">Explore my world <span>↗</span></Link><a href="#log" className="text-button">Read the field notes <span>↓</span></a></div></div>
    <div className="mesh-panel"><div className="mesh-label mono"><span>FIG. 001 — CONTINUOUS CURIOSITY</span><span>3D / ∞</span></div><Mesh paused={paused}/><div className="mesh-bottom mono"><span>x = (R + r cos v) cos u</span><button onClick={()=>setPaused(!paused)} aria-pressed={paused}>{paused?"▶ PLAY":"Ⅱ PAUSE"}</button></div></div></div>
    <div className="hero-foot"><span className="mono"><i className="status-light"/> CURRENTLY AT <b>HACKERRANK</b></span><p>Code with intent. Build with curiosity.</p><a href="#log" aria-label="Scroll to writing">↓</a></div>

@@ -336,7 +336,7 @@ export default function BlogPost({ post }: { post: Post }) {
           <div className="avatar">Y</div>
           <div>
             <div className="who">Yashika Jotwani</div>
-            <div className="bio">Software developer &amp; designer · Delhi</div>
+            <div className="bio">Software developer &amp; designer · Bangalore</div>
           </div>
           <Reactions />
         </div>
