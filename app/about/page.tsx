@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About — Yashika Jotwani",
   description:
-    "Backend engineer at HackerRank, based in Delhi. Building scalable backends by day and chasing quiet, considered design by night.",
+    "Backend engineer at HackerRank, based in Bangalore. Scalable systems, open source, and the experience behind the work.",
 };
 
 type Role = {
@@ -65,174 +65,26 @@ const roles: Role[] = [
   },
 ];
 
-type Chip = { label: string; size?: "big"; mono?: boolean; ast?: boolean };
-
-const skills: Chip[] = [
-  { label: "TypeScript", size: "big", ast: true },
-  { label: "React" },
-  { label: "Next.js" },
-  { label: "node.js", mono: true },
-  { label: "Tailwind" },
-  { label: "Python", size: "big", ast: true },
-  { label: "postgresql", mono: true },
-  { label: "git", mono: true },
-  { label: "Figma" },
-  { label: "docker", mono: true },
+const toolkit = [
+  { title: "Languages", items: ["TypeScript", "Python"] },
+  { title: "Application", items: ["React", "Next.js", "Node.js"] },
+  { title: "Infrastructure", items: ["PostgreSQL", "Docker", "Git"] },
+  { title: "Interface", items: ["Tailwind CSS", "Figma"] },
 ];
 
 export default function AboutPage() {
-  return (
-    <main className="about-main">
-      {/* HERO */}
-      <section className="hero-row">
-        <div>
-          <div className="about-eyebrow">
-            <span className="bar" />
-            <span>About · backend engineer at HackerRank · based in Delhi</span>
-          </div>
-          <h1 className="about-title">
-            <span className="roman">A</span> developer{" "}
-            <span className="ampersand">&amp;</span> a designer
-            <span style={{ color: "var(--accent)" }}>.</span>
-          </h1>
-          <p className="about-lede">
-            I build <em>scalable backends</em> by day and chase{" "}
-            <em>quiet, considered design</em> by night. Most of what I make starts as a{" "}
-            <span className="accent">careful sentence</span> in a notebook — then becomes
-            code that, with luck, no one notices.
-          </p>
-        </div>
-
-        <div className="portrait" aria-hidden="true">
-          <div className="pin">↳ Delhi · IST</div>
-          <div className="yj">YJ</div>
-          <div className="caption">
-            <span>Self-portrait</span>
-            <span className="v">MMXXVI</span>
-          </div>
-        </div>
-      </section>
-
-      {/* EXPERIENCE */}
-      <section>
-        <div className="section-rule">
-          <span className="label">// experience</span>
-          <span className="star">✱</span>
-        </div>
-
-        <h2 className="section-title">Where I&apos;ve spent my hours.</h2>
-        <p className="section-sub">
-          A timeline of roles, internships, and fellowships — listed newest first.
-        </p>
-
-        <div className="timeline">
-          {roles.map((r, i) => (
-            <div className="role-row" key={i}>
-              <div className="when">{r.when}</div>
-              <div>
-                <div className="where">{r.where}</div>
-                <div className="what">{r.what}</div>
-                <p className="desc">{r.desc}</p>
-              </div>
-              <div className="tags">
-                {r.tags.map((t) => (
-                  <span key={t.label} className={`tag${t.current ? " cur" : ""}`}>
-                    {t.label}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section className="skills-section">
-        <div>
-          <div className="section-rule" style={{ margin: "0 0 24px" }}>
-            <span className="label">// skills</span>
-            <span className="star">✱</span>
-          </div>
-          <h2 className="section-title">Tools I reach for.</h2>
-          <p
-            className="section-sub"
-            style={{ marginTop: 14, marginBottom: 0, maxWidth: 280 }}
-          >
-            A small, reliable kit. The shape of it changes slowly, on purpose.
-          </p>
-        </div>
-        <div className="skill-cloud">
-          {skills.map((c) => {
-            const cls = ["chip", c.size === "big" ? "big" : "", c.mono ? "mono" : ""]
-              .filter(Boolean)
-              .join(" ");
-            return (
-              <span key={c.label} className={cls}>
-                {c.ast && <span className="ast">✱</span>}
-                {c.label}
-              </span>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* FACTS */}
-      <section className="facts">
-        <div className="fact">
-          <div className="k">Based in</div>
-          <div className="v">Delhi, India</div>
-        </div>
-        <div className="fact">
-          <div className="k">Currently</div>
-          <div className="v">
-            <span className="accent">SDE 2</span> · HackerRank
-          </div>
-        </div>
-        <div className="fact">
-          <div className="k">Languages</div>
-          <div className="v">English, Hindi</div>
-        </div>
-        <div className="fact">
-          <div className="k">Off the clock</div>
-          <div className="v">Reading, walking</div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="contact-card">
-        <div className="glyph">✱</div>
-        <h3>
-          Want to <span className="accent">build something quiet</span> together?
-        </h3>
-        <p>
-          I read every email. The best ones say what you&apos;re working on and what&apos;s
-          getting in the way — I&apos;ll write back within a few days.
-        </p>
-        <div className="cta-row">
-          <a className="about-cta primary" href="mailto:hello@yashika.dev">
-            <span>hello@yashika.dev</span>
-            <span className="arrow">↗</span>
-          </a>
-          <a
-            className="about-cta"
-            href="https://github.com/yashikajotwani12"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>github</span>
-            <span className="arrow">↗</span>
-          </a>
-          <a
-            className="about-cta"
-            href="https://read.cv"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>read.cv</span>
-            <span className="arrow">↗</span>
-          </a>
-        </div>
-      </section>
-    </main>
-  );
+  return <main className="profile-page">
+    <section className="profile-intro">
+      <p className="mono profile-label">02 / THE PERSON BEHIND THE CODE</p>
+      <h1>Systems thinker.<br/><span>Detail obsessive.</span><br/>Always a builder.</h1>
+      <div className="profile-summary"><p>I’m Yashika, a backend engineer at HackerRank. I build scalable systems, contribute to open source, and care about how software feels to the people using it.</p><a className="profile-github" href="https://github.com/yashikajotwani12" target="_blank" rel="noopener noreferrer">Find me on GitHub <span>↗</span></a></div>
+    </section>
+    <section className="profile-grid" aria-label="At a glance">
+      <div className="profile-now"><div className="mono"><i className="status-light"/> CURRENT CHAPTER</div><h2>HackerRank<span>↗</span></h2><p>SDE 2 · Backend engineering</p><div className="mono now-since">SINCE MAR 2025</div></div>
+      <div className="profile-fact"><span className="mono">HOME BASE</span><h2>Bangalore, India<span>↗ 12.97° N / 77.59° E</span></h2><p>English & Hindi</p></div>
+      <div className="profile-fact"><span className="mono">AWAY FROM THE KEYBOARD</span><h2>Reading.<br/>Walking.<br/><span className="fact-accent">Resetting.</span></h2></div>
+    </section>
+    <section className="career-section"><div className="profile-section-head"><p className="mono profile-label">01 / EXPERIENCE</p><h2>The journey<br/>so far<span>.</span></h2><p>From working in public to building for production.</p></div><div className="career-list">{roles.map((role,i)=><article className="career-card" key={role.where+role.what}><div className="career-meta mono"><span>{role.when}</span><span>{i===0?"● NOW":String(roles.length-i).padStart(2,"0")}</span></div><h3>{role.where}</h3><div className="career-role">{role.what}</div><p>{role.desc}</p><div className="career-tags">{role.tags.filter(t=>!t.current).map(t=><span key={t.label}>{t.label}</span>)}</div></article>)}</div></section>
+    <section className="toolkit-section"><div className="profile-section-head"><p className="mono profile-label">02 / TOOLKIT</p><h2>Good tools.<br/>Better questions<span>.</span></h2></div><div className="toolkit-grid">{toolkit.map((group,i)=><div className="toolkit-card" key={group.title}><div className="mono"><span>0{i+1}</span>{group.title}</div><ul>{group.items.map(item=><li key={item}>{item}</li>)}</ul></div>)}</div></section>
+  </main>;
 }

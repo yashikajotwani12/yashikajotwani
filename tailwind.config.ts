@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-instrument-serif)", "ui-serif", "Georgia", "serif"],
         sans: ["var(--font-inter)", "Helvetica Neue", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains-mono)", "ui-monospace", "Menlo", "monospace"],
       },
@@ -21,7 +20,6 @@ const config: Config = {
         "ink-3": "var(--ink-3)",
         rule: "var(--rule)",
         accent: "var(--accent)",
-        "accent-soft": "var(--accent-soft)",
       },
     },
   },
