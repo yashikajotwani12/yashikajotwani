@@ -755,19 +755,6 @@ body.has-halo .cursor-halo {
   border-color: var(--accent);
   transform: rotate(-45deg);
 }
-.next-card .nx-glyph {
-  position: absolute;
-  right: -20px;
-  top: -10px;
-  font-family: var(--font-inter), system-ui, sans-serif;
-  font-style: italic;
-  color: var(--accent);
-  opacity: 0.12;
-  font-size: 140px;
-  line-height: 1;
-  pointer-events: none;
-}
-
 @media (max-width: 720px) {
   .prose h2 {
     font-size: 30px;
@@ -1325,3 +1312,13 @@ body{font-size:1rem}a,button{-webkit-tap-highlight-color:transparent}button,a{to
 @media(max-width:540px){.profile-page{padding:42px 6% 65px}.profile-intro h1{font-size:clamp(38px,9.8vw,54px);letter-spacing:-.055em}.profile-summary p{font-size:18px}.profile-grid{grid-template-columns:1fr;margin-top:35px}.profile-now{grid-column:auto}.profile-fact{min-height:210px}.profile-now,.profile-fact,.career-card{padding:24px}.profile-fact h2{margin-top:22px}.toolkit-grid{grid-template-columns:1fr}.toolkit-section{margin-top:65px}.career-meta{font-size:12px}.career-card h3{font-size:24px}}
 
 .article-divider { border: 0; border-top: 1px solid var(--rule); margin: 44px 0; }
+
+/* Minimal article navigation */
+.next-block .next-label{font-size:12px;letter-spacing:.06em;margin-bottom:18px}
+.next-card{border:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);border-radius:0;background:transparent;padding:26px 0;gap:24px}
+.next-card .nx-title{font-style:normal;font-weight:500;font-size:clamp(22px,3vw,28px);line-height:1.35;letter-spacing:-.035em}
+.next-card .nx-meta{font-size:12px;letter-spacing:0;text-transform:none;margin-top:10px}
+.next-card .nx-arrow{border:0;border-radius:0;width:32px;height:32px;color:var(--accent)}
+.next-card:hover{transform:none;border-color:var(--accent);background:transparent}
+.next-card:hover .nx-title{color:var(--accent)}
+.next-card:hover .nx-arrow{background:transparent;color:var(--accent);transform:translate(3px,-3px)}

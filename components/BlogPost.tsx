@@ -25,13 +25,6 @@ function nextPost(slug: string): Post | null {
   return posts[idx + 1];
 }
 
-const NEXT_GLYPHS: Record<string, string> = {
-  "building-minimalist-portfolio-nextjs": "✦",
-  "dark-mode-done-right-next-themes": "◐",
-  "art-of-subtle-animations": "✿",
-  "typescript-tips-react-developers": "⌘",
-};
-
 /* ─── Title splitter: italicize content nouns, keep small connectors roman ─── */
 function splitTitle(title: string): React.ReactNode {
   const ROMAN = new Set([
@@ -289,7 +282,6 @@ export default function BlogPost({ post }: { post: Post }) {
   const category = categoryBySlug[post.slug] ?? "Notes";
   const num = postNumber(post.slug);
   const next = nextPost(post.slug);
-  const nextGlyph = next ? NEXT_GLYPHS[next.slug] ?? "✦" : "✦";
   const nextCategory = next ? categoryBySlug[next.slug] ?? "Notes" : "";
 
   return (
@@ -340,7 +332,7 @@ export default function BlogPost({ post }: { post: Post }) {
 
         {next && (
           <div className="next-block">
-            <div className="next-label">— Next in the log</div>
+            <div className="next-label">Read next</div>
             <Link href={`/log/${next.slug}`} className="next-card">
               <div>
                 <div className="nx-title">{next.title}</div>
@@ -360,7 +352,6 @@ export default function BlogPost({ post }: { post: Post }) {
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
               </div>
-              <div className="nx-glyph">{nextGlyph}</div>
             </Link>
           </div>
         )}
